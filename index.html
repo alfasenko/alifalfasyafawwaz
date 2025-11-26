@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style_UTS.css">
+    <style>
+      /* ini adalah internal css */
+
+      header {
+        background-color: #046eaf;
+        text-align: center;
+        padding: 15px 0;
+        color: white;
+      }
+
+      nav {
+        background-color: #0783ef;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: rgb(227, 223, 215);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 0;
+        height: 400px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        /* background-color: grey; */
+        background: url("https://assetsio.gnwcdn.com/Solo-Leveling-Arise-Code-Header.jpg?width=690&quality=85&format=jpg&dpr=1.5&auto=webp")
+          no-repeat center center/cover;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 30px;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        /* background-color: red; */
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service {
+        flex: 1;
+        min-width: 250px;
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .service h3 {
+        color: #3a94e3;
+      }
+
+      form {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input,
+      textarea {
+        width: 99%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #0490e7;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #036ca9;
+      }
+
+      footer {
+        text-align: center;
+        background: #333;
+        color: white;
+        padding: 10px 0;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Hunter Society</h1>
+      <p>Become Zero to hero</p>
+    </header>
+    <nav>
+      <a href="#beranda">Home</a>
+      <a href="#tentang">Service</a>
+      <a href="#layanan">Service</a>
+      <a href="#kontak">Contact</a>
+    </nav>
+    <section class="hero" id="beranda">
+      <h1>Welcome To Our Website</h1>
+    </section>
+
+    <section class="container" id="layanan">
+      <h2 style="text-align: center">Service us</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Dungeon Service </h3>
+          <p>Eradicate the bad red gate and others</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="container" id="tentang">
+      <h2 style="text-align: center">About us</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Visi</h3>
+          <p>Become the strongest hunter who is able to protect the world from the threat of dungeons, while uncovering the truth about inherited shadow powers, and keeping the people you love safe.</p>
+        </div>
+        <div class="service">
+          <h3>Misi</h3>
+          <p>MStrength-Boosting Missions
+
+Face increasingly dangerous dungeons to gain experience and items.
+
+Gather allies and build a Shadow Army.
+
+Keep your powers a secret from major organizations and guilds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="kontak">
+      <h2 style="text-align: center">Contact us</h2>
+      <form action="">
+        <label>Name</label>
+        <input type="text" placeholder="enter your name" />
+        <label>Email</label>
+        <input type="email" placeholder="enter your email" />
+        <label>Message</label>
+        <textarea rows="5" placeholder="enter your message"></textarea>
+        <button type="submit">Send/button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Copyright © 2025 Hunter Society</p>
+    </footer>
+  </body>
+</html>
